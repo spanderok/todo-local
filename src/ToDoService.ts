@@ -1,13 +1,22 @@
 import { action, observable } from 'mobx';
 
 export interface IToDoItem {
-    id: string;
-    content: string;
-    completed: boolean;
+    arrToDos: Array<IToDoItem>;
+
 }
 
-export class ToDoService {
+export class ToDoService implements IToDoItem {
 
-    @observable puublic readonly value: IToDoItem;
+    @observable
+    public arrToDos: Array<IToDoItem> = [];
+
+    @action.bound
+    public setNewToDo (newToDoValue: string): Array<IToDoItem> {
+        const NewObjToDo = {
+            value: '',
+        };
+        NewObjToDo.value = newToDoValue;
+        return this.arrToDos.push(NewObjToDo);
+    };
 
 }
