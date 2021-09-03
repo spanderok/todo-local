@@ -1,0 +1,9 @@
+.card{
+    width: 300px;
+}
+.checkboxes{
+    padding: 0px 4px 0px 4px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
