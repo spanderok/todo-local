@@ -2,6 +2,9 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
+import App from './App';
+
+
 
 import './style.css';
 
@@ -35,4 +38,4 @@ const Timer = observer(() => {
   );
 });
 
-ReactDOM.render(<Timer />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

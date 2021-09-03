@@ -32,6 +32,7 @@
     "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
+    "antd": "^4.16.13",
     "mobx": "^5.15.7",
     "mobx-react": "^6.3.1",
     "react": "^16.10.2",
