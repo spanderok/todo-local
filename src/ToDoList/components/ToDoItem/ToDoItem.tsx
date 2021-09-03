@@ -10,8 +10,6 @@ export function ToDoItem () {
 
     return (
         <div className="to-do-item">
-                <Card style={{ width: 300 }}>
-        <div className="to-do-item">
                 <Card className="card">
                     <div>
                         <p>Card content Card content Card content Card content Card contentCard content
