@@ -1,5 +1,5 @@
 import React from "react";
-import './ToDoList.module.css';
+import './ToDoList.css';
 import "antd/dist/antd.css";
 import { Button, Card, Checkbox } from "antd";
 import ToDoItem from './components/ToDoItem/ToDoItem';
