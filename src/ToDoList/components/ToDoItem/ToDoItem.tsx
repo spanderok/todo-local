@@ -3,13 +3,13 @@ import './ToDoItem.module.css';
 import "antd/dist/antd.css";
 import {Card, Checkbox } from "antd";
 
-const ToDoItem = () => {
+export function ToDoItem () {
     function onChangeCheckbox(e) {
         console.log(`checked = ${e.target.checked}`);
     }
 
     return (
-        <div className="ToDoItem">
+        <div className="to-do-item">
                 <Card style={{ width: 300 }}>
                     <div>
                         <p>Card content Card content Card content Card content Card contentCard content
@@ -22,7 +22,4 @@ const ToDoItem = () => {
                 </Card>
         </div>
     );
-
-}
-
-export default ToDoItem;
+};

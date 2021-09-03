@@ -1,0 +1,9 @@
+ .input{
+    width: 300px;
+    background-color: red;
+}
+ .contaner-input-button{
+     display: flex;
+     justify-content: center;
+
+ }
