@@ -1,7 +1,7 @@
 import React from "react";
 import './ToDoList.module.css';
 import "antd/dist/antd.css";
-import { Button, Card, Checkbox } from "antd";
+import { Button, Card, Checkbox, Input } from "antd";
 import ToDoItem from './components/ToDoItem/ToDoItem';
 
 
@@ -9,14 +9,11 @@ const ToDoList = () => {
 
 
     return (
-        <div className="ToDoList">
+        <div className="to-do-list">
             <div className="ContainerForTickets">
                 <ToDoItem />
-                <Card style={{ width: 300 }}>
-                    <p>Card content</p>
-                </Card>
             </div>
-
+            <Input className="input" placeholder="Enet new to do text" />
             <Button type="primary">Creat to do</Button>
         </div>
     );
