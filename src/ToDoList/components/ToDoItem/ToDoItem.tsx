@@ -1,5 +1,5 @@
 import React from "react";
-import './ToDoItem.module.css';
+import './ToDoItem.css';
 import "antd/dist/antd.css";
 import {Card, Checkbox } from "antd";
 
@@ -9,13 +9,13 @@ const ToDoItem = () => {
     }
 
     return (
-        <div className="ToDoItem">
-                <Card style={{ width: 300 }}>
+        <div className="to-do-item">
+                <Card className="card">
                     <div>
                         <p>Card content Card content Card content Card content Card contentCard content
                             Card content Card contentCard content Card content </p>
                     </div>
-                    <div>
+                    <div className="checkboxes">
                         <Checkbox onChange={onChangeCheckbox}>In progress</Checkbox>
                         <Checkbox onChange={onChangeCheckbox}>done</Checkbox>
                     </div>
