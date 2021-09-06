@@ -2,8 +2,9 @@ import React from "react";
 import './ToDoItem.css';
 import "antd/dist/antd.css";
 import {Card, Checkbox } from "antd";
+import { observer } from "mobx-react";
 
-export function ToDoItem () {
+export const ToDoItem = () => {
     function onChangeCheckbox(e) {
         console.log(`checked = ${e.target.checked}`);
     }

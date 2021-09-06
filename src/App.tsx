@@ -3,7 +3,7 @@ import { ToDoList } from "./ToDoList/ToDoList";
 
 
 
-export function App() {
+export const App = () => {
     return (
         <div className="App">
             <ToDoList />

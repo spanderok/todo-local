@@ -5,7 +5,7 @@ import { Button, Card, Checkbox } from "antd";
 import { ToDoItem } from './components/ToDoItem/ToDoItem';
 
 
-export function ToDoList() {
+export const ToDoList = () => {
 
 
     return (
