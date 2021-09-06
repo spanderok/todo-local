@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
-import App from './App';
+import { App } from './App';
 
 
 

@@ -3,7 +3,7 @@ import './ToDoItem.css';
 import "antd/dist/antd.css";
 import {Card, Checkbox } from "antd";
 
-const ToDoItem = () => {
+export function ToDoItem () {
     function onChangeCheckbox(e) {
         console.log(`checked = ${e.target.checked}`);
     }
@@ -25,4 +25,3 @@ const ToDoItem = () => {
 
 }
 
-export default ToDoItem;

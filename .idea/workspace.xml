@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="add observable and action">
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="make toDoService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <updated>1630661091161</updated>
       <workItem from="1630661092399" duration="12052000" />
       <workItem from="1630676662063" duration="3458000" />
-      <workItem from="1630910122971" duration="3424000" />
+      <workItem from="1630910122971" duration="4935000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630680970379</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="make toDoService">
+      <created>1630914282419</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1630914282419</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +151,8 @@
     <MESSAGE value="add input" />
     <MESSAGE value="add input and change design" />
     <MESSAGE value="add observable and action" />
-    <option name="LAST_COMMIT_MESSAGE" value="add observable and action" />
+    <MESSAGE value="make toDoService" />
+    <option name="LAST_COMMIT_MESSAGE" value="make toDoService" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

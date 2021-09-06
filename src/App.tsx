@@ -1,9 +1,9 @@
 import React from "react";
-import ToDoList from "./ToDoList/ToDoList";
+import { ToDoList } from "./ToDoList/ToDoList";
 
 
 
-const App = () => {
+export function App() {
     return (
         <div className="App">
             <ToDoList />
@@ -11,5 +11,3 @@ const App = () => {
     );
 
 }
-
-export default App;

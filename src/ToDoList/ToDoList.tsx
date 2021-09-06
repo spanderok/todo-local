@@ -2,10 +2,10 @@ import React from "react";
 import './ToDoList.css';
 import "antd/dist/antd.css";
 import { Button, Card, Checkbox } from "antd";
-import ToDoItem from './components/ToDoItem/ToDoItem';
+import { ToDoItem } from './components/ToDoItem/ToDoItem';
 
 
-const ToDoList = () => {
+export function ToDoList() {
 
 
     return (
@@ -23,4 +23,3 @@ const ToDoList = () => {
 
 }
 
-export default ToDoList;
