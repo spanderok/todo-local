@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="make toDoService">
+      <change afterPath="$PROJECT_DIR$/src/useService.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +65,7 @@
       <workItem from="1630661092399" duration="12052000" />
       <workItem from="1630676662063" duration="3458000" />
       <workItem from="1630910122971" duration="4935000" />
+      <workItem from="1630927534380" duration="13120000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
