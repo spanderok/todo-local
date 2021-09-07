@@ -1,15 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { action, observable } from 'mobx';
-import { observer, Provider } from 'mobx-react';
-import { App } from './App';
+import { Provider } from 'mobx-react';
 import {createContext, useContext} from "react";
-import './style.css';
 
 const ToDoServiceContext = createContext({});
 
 export function useService<T> (): T {
-
     return useContext(ToDoServiceContext) as T;
 }
 

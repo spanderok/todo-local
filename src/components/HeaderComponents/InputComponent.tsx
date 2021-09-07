@@ -1,9 +1,7 @@
 import React from "react";
-import './ToDoList.css';
 import "antd/dist/antd.css";
 import { Button, Card, Checkbox, Input } from "antd";
-import { ToDoItem } from './components/ToDoItem/ToDoItem';
-
+import './style.css';
 
 export const InputComponent = () => {
 

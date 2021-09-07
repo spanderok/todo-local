@@ -1,9 +1,6 @@
 import React from "react";
-import { InputComponent } from "ToDoList/components/HeaderComponents/InputComponent";
-import { ToDoItems } from "ToDoList/components/ToDoItem/ToDoItems";
-import { ToDoList } from "./ToDoList/ToDoList";
-
-
+import { InputComponent } from "./components/HeaderComponents/InputComponent";
+import { ToDoItems } from "./components/ToDoItems/ToDoItems";
 
 export const App = () => {
     return (
@@ -12,5 +9,4 @@ export const App = () => {
             <ToDoItems />
         </div>
     );
-
 }
