@@ -1,6 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
-import { Button, Card, Checkbox, Input } from "antd";
+import { Button, Input } from "antd";
 import './style.css';
 
 export const InputComponent = () => {

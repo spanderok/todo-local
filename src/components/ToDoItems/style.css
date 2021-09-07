@@ -1,7 +1,15 @@
 .card{
     width: 300px;
+    display: flex;
+    flex-direction: column;
 }
-.checkboxes{
+.ant-card-body{
+    padding: 5px;
+    background-color: antiquewhite;
+}
+.control-panel{
+    width: 100%;
+    margin-bottom: 0px;
     padding: 0px 4px 0px 4px;
     background-color: whitesmoke;
     display: flex;
