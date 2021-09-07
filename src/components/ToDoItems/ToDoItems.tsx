@@ -1,6 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
-import { Card, Checkbox, Button } from "antd";
+import {Card, Checkbox, Button, Input} from "antd";
 import { observer } from "mobx-react";
 import { useService } from "../../hooks/useServices"
 import {Todo, ToDoService} from "../../services/ToDoService";
@@ -12,7 +12,20 @@ const Todo = (todo: Todo) => {
   }
   const {toDoService} = useService<{ toDoService: ToDoService }>();
 
-
+  if(todo.editMode) {
+    return (
+      <Card className="card">
+        <div className="card-content">
+          <Input>{todo.title}</Input>
+          <Button onClick={() => toDoService.togleEditMode(todo.id)} type="primary">edit</Button>
+        </div>
+        <div className="control-panel">
+          <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
+          <Button onClick={() => toDoService.deteTodo(todo.id)} type="primary">delete</Button>
+        </div>
+      </Card>
+    )
+  }
   return (
       <Card className="card">
         <div className="card-content">
@@ -24,7 +37,6 @@ const Todo = (todo: Todo) => {
           <Button onClick={() => toDoService.deteTodo(todo.id)} type="primary">delete</Button>
         </div>
       </Card>
-
     );
 };
 
