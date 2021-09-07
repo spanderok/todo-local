@@ -1,5 +1,5 @@
 import React from "react";
-import { ToDoList } from "./ToDoList/ToDoList";
+import {ToDoList} from "./ToDoList/ToDoList";
 
 
 
