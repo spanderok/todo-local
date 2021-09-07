@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="creat useService">
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="refactor useService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <workItem from="1630661092399" duration="12052000" />
       <workItem from="1630676662063" duration="3458000" />
       <workItem from="1630910122971" duration="4935000" />
-      <workItem from="1630927534380" duration="16006000" />
+      <workItem from="1630927534380" duration="17448000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -136,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630941899991</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor useService">
+      <created>1630944777373</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1630944777373</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +167,8 @@
     <MESSAGE value="add observable and action" />
     <MESSAGE value="make toDoService" />
     <MESSAGE value="creat useService" />
-    <option name="LAST_COMMIT_MESSAGE" value="creat useService" />
+    <MESSAGE value="refactor useService" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor useService" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
