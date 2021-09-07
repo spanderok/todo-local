@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { App } from './App';
 import { ToDoService } from "./services/ToDoService"
 import './style.css';
-import { ServiceProvider } from './hooks/useService';
+import { ServiceProvider } from './hooks/useServices';
 
 ReactDOM.render(<ServiceProvider toDoService={ new ToDoService()}>
     <App />

@@ -2,7 +2,7 @@ import React from "react";
 import "antd/dist/antd.css";
 import { Card, Checkbox, Button } from "antd";
 import { observer } from "mobx-react";
-import { useService } from "../../hooks/useService"
+import { useService } from "../../hooks/useServices"
 import { ToDoService } from "../../services/ToDoService";
 import './style.css';
 
