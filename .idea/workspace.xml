@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="refactor useService">
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ToDoList/components/HeaderComponents/InputComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ToDoList/components/HeaderComponents/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2021_14_33__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2021_14_33__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoList/ToDoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoList/ToDoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItems.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDoList/components/ToDoItem/ToDoItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="add-input" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

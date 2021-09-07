@@ -8,7 +8,7 @@ import {useContext} from "react";
 import {useService} from "../../../useService"
 import { ToDoService } from "ToDoService";
 
-export const ToDoItem = (observer(() => {
+export const ToDoItems = (observer(() => {
     const {toDoService} = useService<{ toDoService: ToDoService }>();
     function onChangeCheckbox(e) {
         console.log(`checked = ${e.target.checked}`);

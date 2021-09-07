@@ -1,12 +1,15 @@
 import React from "react";
-import {ToDoList} from "./ToDoList/ToDoList";
+import { InputComponent } from "ToDoList/components/HeaderComponents/InputComponent";
+import { ToDoItems } from "ToDoList/components/ToDoItem/ToDoItems";
+import { ToDoList } from "./ToDoList/ToDoList";
 
 
 
 export const App = () => {
     return (
         <div className="App">
-            <ToDoList />
+            <InputComponent />
+            <ToDoItems />
         </div>
     );
 
