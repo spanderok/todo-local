@@ -3,10 +3,9 @@ import * as ReactDOM from 'react-dom';
 import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
 import { App } from './App';
-
-
-
+import {ToDoService} from "./ToDoService"
 import './style.css';
+import { ServiceProvider } from './useService';
 
 // class AppState {
 //   @observable timer = 0;
@@ -38,4 +37,6 @@ import './style.css';
 //   );
 // });
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<ServiceProvider toDoService={ new ToDoService()}>
+    <App />
+</ServiceProvider>, document.getElementById('root'));
