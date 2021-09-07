@@ -30,4 +30,11 @@ export class ToDoService{
         if(!todo)return;
         todo.editMode = !todo.editMode;
     };
+    @action
+    saveEditCard (id, inputValue): void {
+        const todo = this.arrToDos.find(todo => todo.id === id)
+        if(!todo)return;
+        todo.editMode = !todo.editMode;
+        todo.title = inputValue;
+    };
 }

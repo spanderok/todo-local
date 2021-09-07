@@ -15,14 +15,17 @@ const Todo = (todo: Todo) => {
 
   return (
       <Card className="card">
-        <div className="card-content">
           { todo.editMode? (
-            <Input value={inputValue} onChange={getInputValue}/>
-          ):(
-            <p>{todo.title}</p>
-          )}
-          <Button onClick={() => toDoService.toggleEditMode(todo.id)} type="primary">edit</Button>
-        </div>
+            <div className="card-content">
+              <Input value={inputValue} onChange={getInputValue} />
+              <Button onClick={() => toDoService.saveEditCard(todo.id, inputValue)} type="primary">save</Button>
+            </div>
+            ):(
+            <div className="card-content">
+              <p>{todo.title}</p>
+              <Button onClick={() => toDoService.toggleEditMode(todo.id)} type="primary">edit</Button>
+            </div>
+            )}
         <div className="control-panel">
           <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
           <Button onClick={() => toDoService.deleteTodo(todo.id)} type="primary">delete</Button>

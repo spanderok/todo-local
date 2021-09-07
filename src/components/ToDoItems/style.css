@@ -28,3 +28,7 @@
     padding: 0px;
     background-color: green;
 }
+.card-content p {
+    word-wrap: break-word;
+    width: 90%;
+}
