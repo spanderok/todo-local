@@ -1,14 +1,12 @@
 import React from "react";
-import './ToDoItem.css';
 import "antd/dist/antd.css";
-import {Card, Checkbox } from "antd";
-import { observer, inject  } from "mobx-react";
-import { Button } from "antd";
-import {useContext} from "react";
-import {useService} from "../../../useService"
-import { ToDoService } from "ToDoService";
+import { Card, Checkbox, Button } from "antd";
+import { observer } from "mobx-react";
+import { useService } from "../../hooks/useServices"
+import { ToDoService } from "../../services/ToDoService";
+import './style.css';
 
-export const ToDoItem = (observer(() => {
+export const ToDoItems = (observer(() => {
     const {toDoService} = useService<{ toDoService: ToDoService }>();
     function onChangeCheckbox(e) {
         console.log(`checked = ${e.target.checked}`);
