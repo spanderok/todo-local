@@ -17,6 +17,7 @@ export const InputComponent = () => {
             id: new Date().valueOf()
         };
         toDoService.addNewToDo(todo);
+        setInputValue('');
     };
     const getInputValue = (e): void =>{
         setInputValue(e.target.value)
@@ -25,7 +26,7 @@ export const InputComponent = () => {
     return (
         <div className="contaner-input-button">
             <div className="input">
-                <Input onChange={getInputValue} placeholder="Enet new to do text"/>
+                <Input value={inputValue} onChange={getInputValue} placeholder="Enet new to do text"/>
             </div>
             <Button onClick={createTodoObj} type="primary">Creat to do</Button>
         </div>

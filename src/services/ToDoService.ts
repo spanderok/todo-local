@@ -21,4 +21,8 @@ export class ToDoService{
         if(!todo)return;
         todo.isDone = !todo.isDone
     };
+    @action
+    deteTodo (id): void {
+        this.arrToDos = this.arrToDos.filter( todo => todo.id !== id);
+    };
 }

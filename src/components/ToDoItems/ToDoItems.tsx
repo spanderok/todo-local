@@ -18,7 +18,7 @@ const Todo = (todo: Todo) => {
           <p>{todo.title}</p>
           <div className="control-panel">
               <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
-              <Button type="primary">delete</Button>
+              <Button onClick={() => toDoService.deteTodo(todo.id)} type="primary">delete</Button>
           </div>
       </Card>
 
