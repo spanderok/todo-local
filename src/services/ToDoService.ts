@@ -1,15 +1,24 @@
-import { action, observable, makeObservable } from 'mobx';
+import { action, observable, makeAutoObservable } from 'mobx';
 
-type Todo = { title: string, isDone: boolean, id: number };
-
+export type Todo = { title: string, isDone: boolean, id: number };
 export class ToDoService{
+
+    constructor() {
+        makeAutoObservable(this)
+    }
 
     @observable
     arrToDos: Todo[] = [];
     
-
     @action
-    addNewToDo (todo: Todo): void {
-        this.arrToDos = [...this.arrToDos,todo];
+    addNewToDo ({title}: Pick<Todo, "title">): void {
+        this.arrToDos = [...this.arrToDos,{title, isDone: false, id: new Date().valueOf()}];
+        console.log(this.arrToDos)
+    };
+    @action
+    completeTodo (id): void {
+        const todo = this.arrToDos.find(todo => todo.id === id)
+        if(!todo)return;
+        todo.isDone = !todo.isDone
     };
 }

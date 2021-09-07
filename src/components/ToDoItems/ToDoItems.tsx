@@ -3,30 +3,36 @@ import "antd/dist/antd.css";
 import { Card, Checkbox, Button } from "antd";
 import { observer } from "mobx-react";
 import { useService } from "../../hooks/useServices"
-import { ToDoService } from "../../services/ToDoService";
+import {Todo, ToDoService} from "../../services/ToDoService";
 import './style.css';
 
-export const ToDoItems = (observer(() => {
-    const {toDoService} = useService<{ toDoService: ToDoService }>();
-    function onChangeCheckbox(e) {
-        console.log(`checked = ${e.target.checked}`);
-    }
+const Todo = (todo: Todo) => {
+  function onChangeCheckbox(e) {
+    console.log(`checked = ${e.target.checked}`);
+  }
+  const {toDoService} = useService<{ toDoService: ToDoService }>();
 
+
+  return (
+      <Card className="card">
+          <p>{todo.title}</p>
+          <div className="control-panel">
+              <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
+              <Button type="primary">delete</Button>
+          </div>
+      </Card>
+
+    );
+};
+
+export const ToDoItems = observer(() => {
+    const {toDoService} = useService<{ toDoService: ToDoService }>();
+    const todos = toDoService.arrToDos;
+    console.log(todos);
     return (
-        <div className="to-do-item">
-                <Card className="card">
-                    <div>
-                        <p> dfbsgfbndsfgbsfbsbsbsbsbs
-                        sfbgsb
-                        sbs</p>
-                    </div>
-                    <div className="control-panel">
-                        <Checkbox onChange={onChangeCheckbox}>done</Checkbox>
-                        <Button type="primary">delete</Button>
-                    </div>
-                </Card>
+        <div>
+            {todos.map( todo => <Todo {...todo} key={todo.id}/>)}
         </div>
     );
-
-}))
+})
 
