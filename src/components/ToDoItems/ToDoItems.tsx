@@ -11,7 +11,7 @@ export const ToDoItems = (observer(() => {
     function onChangeCheckbox(e) {
         console.log(`checked = ${e.target.checked}`);
     }
-    console.log(toDoService)
+
     return (
         <div className="to-do-item">
                 <Card className="card">
