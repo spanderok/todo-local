@@ -7,38 +7,25 @@ import {Todo, ToDoService} from "../../services/ToDoService";
 import './style.css';
 
 const Todo = (todo: Todo) => {
-  function onChangeCheckbox(e) {
-    console.log(`checked = ${e.target.checked}`);
-  }
   const {toDoService} = useService<{ toDoService: ToDoService }>();
 
-  if(todo.editMode) {
-    return (
-      <Card className="card">
-        <div className="card-content">
-          <Input>{todo.title}</Input>
-          <Button onClick={() => toDoService.togleEditMode(todo.id)} type="primary">edit</Button>
-        </div>
-        <div className="control-panel">
-          <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
-          <Button onClick={() => toDoService.deteTodo(todo.id)} type="primary">delete</Button>
-        </div>
-      </Card>
-    )
-  }
   return (
       <Card className="card">
         <div className="card-content">
-          <p>{todo.title}</p>
-          <Button type="primary">edit</Button>
+          { todo.editMode? (
+            <Input>{todo.title}</Input>
+          ):(
+            <p>{todo.title}</p>
+          )}
+          <Button onClick={() => toDoService.toggleEditMode(todo.id)} type="primary">edit</Button>
         </div>
         <div className="control-panel">
           <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
-          <Button onClick={() => toDoService.deteTodo(todo.id)} type="primary">delete</Button>
+          <Button onClick={() => toDoService.deleteTodo(todo.id)} type="primary">delete</Button>
         </div>
       </Card>
     );
-};
+}
 
 export const ToDoItems = observer(() => {
     const {toDoService} = useService<{ toDoService: ToDoService }>();
