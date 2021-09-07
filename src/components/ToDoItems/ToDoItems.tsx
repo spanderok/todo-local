@@ -15,11 +15,14 @@ const Todo = (todo: Todo) => {
 
   return (
       <Card className="card">
+        <div className="card-content">
           <p>{todo.title}</p>
-          <div className="control-panel">
-              <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
-              <Button onClick={() => toDoService.deteTodo(todo.id)} type="primary">delete</Button>
-          </div>
+          <Button type="primary">edit</Button>
+        </div>
+        <div className="control-panel">
+          <Checkbox onClick={() => toDoService.completeTodo(todo.id)} checked={todo.isDone}>done</Checkbox>
+          <Button onClick={() => toDoService.deteTodo(todo.id)} type="primary">delete</Button>
+        </div>
       </Card>
 
     );
