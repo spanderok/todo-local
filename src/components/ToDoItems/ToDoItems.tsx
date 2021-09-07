@@ -16,9 +16,11 @@ export const ToDoItems = (observer(() => {
         <div className="to-do-item">
                 <Card className="card">
                     <div>
-                        <p> </p>
+                        <p> dfbsgfbndsfgbsfbsbsbsbsbs
+                        sfbgsb
+                        sbs</p>
                     </div>
-                    <div className="checkboxes">
+                    <div className="control-panel">
                         <Checkbox onChange={onChangeCheckbox}>done</Checkbox>
                         <Button type="primary">delete</Button>
                     </div>
