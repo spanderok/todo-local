@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "antd/dist/antd.css";
 import {Card, Checkbox, Button, Input} from "antd";
 import { observer } from "mobx-react";
@@ -8,12 +8,16 @@ import './style.css';
 
 const Todo = (todo: Todo) => {
   const {toDoService} = useService<{ toDoService: ToDoService }>();
+  const [inputValue,setInputValue] = useState(todo.title);
+  const getInputValue = (e): void =>{
+    setInputValue(e.target.value)
+  };
 
   return (
       <Card className="card">
         <div className="card-content">
           { todo.editMode? (
-            <Input>{todo.title}</Input>
+            <Input value={inputValue} onChange={getInputValue}/>
           ):(
             <p>{todo.title}</p>
           )}

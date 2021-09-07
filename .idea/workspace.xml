@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="conditional rendering">
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="refactor conditional rendering">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ToDoService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <workItem from="1630910122971" duration="4935000" />
       <workItem from="1630927534380" duration="17448000" />
       <workItem from="1631002611355" duration="1275000" />
-      <workItem from="1631027568907" duration="1137000" />
+      <workItem from="1631027568907" duration="2267000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631027438952</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactor conditional rendering">
+      <created>1631028951528</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1631028951528</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +270,8 @@
     <MESSAGE value="add delete method and reset input value" />
     <MESSAGE value="add btn edit and action togleEditMode" />
     <MESSAGE value="conditional rendering" />
-    <option name="LAST_COMMIT_MESSAGE" value="conditional rendering" />
+    <MESSAGE value="refactor conditional rendering" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor conditional rendering" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
