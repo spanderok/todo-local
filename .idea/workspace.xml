@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="add delete method and reset input value" />
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="onChangeInputValue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItems/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ToDoService.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="display-todoitems" />
+        <entry key="$PROJECT_DIR$" value="delete-card" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,6 +71,7 @@
       <workItem from="1630910122971" duration="4935000" />
       <workItem from="1630927534380" duration="17448000" />
       <workItem from="1631002611355" duration="1275000" />
+      <workItem from="1631027568907" duration="3478000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -200,7 +206,42 @@
       <option name="project" value="LOCAL" />
       <updated>1631024625149</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add delete method and reset input value">
+      <created>1631025609546</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1631025609546</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add btn edit and action togleEditMode">
+      <created>1631026752092</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1631026752092</updated>
+    </task>
+    <task id="LOCAL-00022" summary="conditional rendering">
+      <created>1631027438952</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1631027438952</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor conditional rendering">
+      <created>1631028951528</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1631028951528</updated>
+    </task>
+    <task id="LOCAL-00024" summary="onChangeInputValue">
+      <created>1631029910783</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1631029910783</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +277,11 @@
     <MESSAGE value="change tabs" />
     <MESSAGE value="add method for chechbox and render from service" />
     <MESSAGE value="add delete method and reset input value" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete method and reset input value" />
+    <MESSAGE value="add btn edit and action togleEditMode" />
+    <MESSAGE value="conditional rendering" />
+    <MESSAGE value="refactor conditional rendering" />
+    <MESSAGE value="onChangeInputValue" />
+    <option name="LAST_COMMIT_MESSAGE" value="onChangeInputValue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
