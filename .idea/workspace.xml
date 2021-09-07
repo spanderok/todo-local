@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="replace useServices">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="create set new to do function">
       <change beforePath="$PROJECT_DIR$/src/components/HeaderComponents/InputComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderComponents/InputComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631002014674</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="create set new to do function">
+      <created>1631012338683</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631012338683</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +205,8 @@
     <MESSAGE value="delete toDoList Component" />
     <MESSAGE value="refuctor Components" />
     <MESSAGE value="replace useServices" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace useServices" />
+    <MESSAGE value="create set new to do function" />
+    <option name="LAST_COMMIT_MESSAGE" value="create set new to do function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
