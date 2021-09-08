@@ -6,7 +6,7 @@ import { Todo, ToDoService } from "../../../../services/ToDoService";
 import './style.css';
 import { TitleTodo } from "./components/titleTodo/titleTodo";
 
-export const EditTitleContainer = (todo: Todo):JSX.Element => {
+export const EditTitleContainer = ({todo}: {todo: Todo}):JSX.Element => {
     const { toDoService } = useService<{ toDoService: ToDoService }>();
 
     const [todoTitle, setTodoTitle] = useState(todo.title);

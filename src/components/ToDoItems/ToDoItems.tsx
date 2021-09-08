@@ -7,12 +7,12 @@ import { Todo, ToDoService } from '../../services/ToDoService';
 import './style.css';
 import { EditTitleContainer } from './components/editTitleContainer/editTitleContainer';
 
-const Todo = (todo: Todo) => {
+const Todo = observer(({todo}: {todo: Todo}) => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
  
   return (
     <Card className="card">
-      <EditTitleContainer {...todo}/>
+      <EditTitleContainer todo={todo}/>
       <div className="control-panel">
         <Checkbox onClick={() => toDoService.completeTodo(todo)} checked={todo.isDone}>
           done
@@ -23,7 +23,7 @@ const Todo = (todo: Todo) => {
       </div>
     </Card>
   );
-};
+})
 
 export const ToDoItems = observer(() => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
@@ -31,8 +31,9 @@ export const ToDoItems = observer(() => {
   return (
     <div>
       {todos.map(todo => (
-        <Todo {...todo} key={todo.id} />
+        <Todo todo={todo} key={todo.id} />
       ))}
     </div>
   );
 });
+
