@@ -12,6 +12,11 @@ export class ToDoService{
     
     @action
     addNewToDo ({title}: Pick<Todo, "title">): void {
+        const todo = this.arrToDo.find(todo => todo.title === title)
+        if(!!todo) {
+            window.alert('Такая задача уже существует')
+            return
+        }
         this.arrToDo = [...this.arrToDo,{title, isDone: false, id: new Date().valueOf(), editMode: false}];
     };
     @action
