@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'antd/dist/antd.css';
-import { Card, Checkbox, Button, Input } from 'antd';
+import { Card, Checkbox, Button } from 'antd';
 import { observer } from 'mobx-react';
 import { useService } from '../../hooks/useServices';
 import { Todo, ToDoService } from '../../services/ToDoService';
@@ -9,7 +9,7 @@ import { EditTitleContainer } from './components/editTitleContainer/editTitleCon
 
 const Todo = (todo: Todo) => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
-
+ 
   return (
     <Card className="card">
       <EditTitleContainer {...todo}/>
