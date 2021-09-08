@@ -1,33 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'antd/dist/antd.css';
-import { Card, Checkbox, Button, Input } from 'antd';
+import { Card, Checkbox, Button } from 'antd';
 import { observer } from 'mobx-react';
 import { useService } from '../../hooks/useServices';
 import { Todo, ToDoService } from '../../services/ToDoService';
 import './style.css';
+import { EditTitleContainer } from './components/editTitleContainer/editTitleContainer';
 
-const Todo = (todo: Todo) => {
+const Todo = observer(({todo}: {todo: Todo}) => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
-  const [todoTitle, setTodoTitle] = useState(todo.title);
-  const [isEdit, setIsEdit] = useState(false);
-
+ 
   return (
     <Card className="card">
-      {isEdit ? (
-        <div className="card-content">
-          <Input value={todoTitle} onChange={(e) => setTodoTitle(e.target.value)} />
-          <Button onClick={() => setIsEdit(toDoService.saveEditCard(todo, todoTitle))} type="primary">
-            save
-          </Button>
-        </div>
-      ) : (
-        <div className="card-content">
-          {todo.isDone ? <s>{todo.title}</s> : <p>{todo.title}</p>}
-          <Button onClick={() => setIsEdit(true)} type="primary">
-            edit
-          </Button>
-        </div>
-      )}
+      <EditTitleContainer todo={todo}/>
       <div className="control-panel">
         <Checkbox onClick={() => toDoService.completeTodo(todo)} checked={todo.isDone}>
           done
@@ -38,7 +23,7 @@ const Todo = (todo: Todo) => {
       </div>
     </Card>
   );
-};
+})
 
 export const ToDoItems = observer(() => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
@@ -46,8 +31,9 @@ export const ToDoItems = observer(() => {
   return (
     <div>
       {todos.map(todo => (
-        <Todo {...todo} key={todo.id} />
+        <Todo todo={todo} key={todo.id} />
       ))}
     </div>
   );
 });
+

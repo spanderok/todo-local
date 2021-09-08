@@ -18,10 +18,12 @@ export class ToDoService{
             return
         }
         this.arrToDo = [...this.arrToDo,{title, isDone: false, id: new Date().valueOf()}];
+
     }
     @action
     completeTodo (todo: Todo): void {
         todo.isDone = !todo.isDone
+
     }
     @action
     deleteTodo (todo: Todo): void {
