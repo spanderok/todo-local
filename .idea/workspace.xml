@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="onSaveChanges">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderComponents/InputComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderComponents/InputComponent.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="change arrTodos on arrTodo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +66,7 @@
       <workItem from="1630910122971" duration="4935000" />
       <workItem from="1630927534380" duration="17448000" />
       <workItem from="1631002611355" duration="1275000" />
-      <workItem from="1631027568907" duration="5818000" />
+      <workItem from="1631027568907" duration="6739000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -246,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631031096962</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="change arrTodos on arrTodo">
+      <created>1631083563745</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1631083563745</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +291,8 @@
     <MESSAGE value="refactor conditional rendering" />
     <MESSAGE value="onChangeInputValue" />
     <MESSAGE value="onSaveChanges" />
-    <option name="LAST_COMMIT_MESSAGE" value="onSaveChanges" />
+    <MESSAGE value="change arrTodos on arrTodo" />
+    <option name="LAST_COMMIT_MESSAGE" value="change arrTodos on arrTodo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
