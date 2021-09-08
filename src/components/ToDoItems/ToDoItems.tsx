@@ -22,7 +22,11 @@ const Todo = (todo: Todo) => {
             </div>
             ):(
             <div className="card-content">
-              <p>{todo.title}</p>
+              { todo.isDone? (
+                <s>{todo.title}</s>
+              ):(
+                <p>{todo.title}</p>
+              )}
               <Button onClick={() => toDoService.toggleEditMode(todo.id)} type="primary">edit</Button>
             </div>
             )}
