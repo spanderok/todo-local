@@ -24,8 +24,13 @@
   "homepage": "http://mobxjs.github.com/mobx",
   "devDependencies": {
     "@types/react-dom": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^5.2.4",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.25.1",
+    "prettier": "^2.3.2",
     "style-loader": "^2.0.0",
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",

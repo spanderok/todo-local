@@ -1,6 +1,6 @@
 import { action, observable, makeAutoObservable } from 'mobx';
 
-export type Todo = { title: string, isDone: boolean, id: number, editMode: boolean };
+export type Todo = { title: string, isDone: boolean, id: number };
 export class ToDoService{
 
     constructor() {
@@ -12,39 +12,29 @@ export class ToDoService{
     
     @action
     addNewToDo ({title}: Pick<Todo, "title">): void {
-        const todo = this.arrToDo.find(todo => todo.title === title)
-        if(!!todo) {
+        const todo = this.arrToDo.some(todo => todo.title === title)
+        if(todo) {
             window.alert('Такая задача уже существует')
             return
         }
-        this.arrToDo = [...this.arrToDo,{title, isDone: false, id: new Date().valueOf(), editMode: false}];
-    };
+        this.arrToDo = [...this.arrToDo,{title, isDone: false, id: new Date().valueOf()}];
+    }
     @action
-    completeTodo (id): void {
-        const todo = this.arrToDo.find(todo => todo.id === id)
-        if(!todo)return;
+    completeTodo (todo: Todo): void {
         todo.isDone = !todo.isDone
-    };
+    }
     @action
-    deleteTodo (id): void {
-        this.arrToDo = this.arrToDo.filter( todo => todo.id !== id);
-    };
+    deleteTodo (todo: Todo): void {
+        this.arrToDo = this.arrToDo.filter( currentTodo => currentTodo !== todo);
+    }
     @action
-    toggleEditMode (id): void {
-        const todo = this.arrToDo.find(todo => todo.id === id)
-        if(!todo)return;
-        todo.editMode = !todo.editMode;
-    };
-    @action
-    saveEditCard (id, inputValue): void {
-        const theSameTodo = this.arrToDo.find(todo => todo.title === inputValue)
-        if(!!theSameTodo) {
-            window.alert('Такая задача уже существует')
-            return
+    saveEditCard (todo: Todo, inputValue: string): boolean {
+        const hasSameTitle = this.arrToDo.some(todo => todo.title === inputValue);
+        if(hasSameTitle) {
+            window.alert('Такая задача уже существует');
+            return false;
         }
-        const todo = this.arrToDo.find(todo => todo.id === id)
-        if(!todo)return;
-        todo.editMode = !todo.editMode;
         todo.title = inputValue;
-    };
+        return true;
+    }
 }

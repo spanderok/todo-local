@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="validate new todo">
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="validate new todo after edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useServices.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useServices.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ToDoService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +74,7 @@
       <workItem from="1630910122971" duration="4935000" />
       <workItem from="1630927534380" duration="17448000" />
       <workItem from="1631002611355" duration="1275000" />
-      <workItem from="1631027568907" duration="10450000" />
+      <workItem from="1631027568907" duration="16742000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -274,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631085619102</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="validate new todo after edit">
+      <created>1631087759177</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1631087759177</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +305,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add toDoCard, checkboxes, button creat" />
     <MESSAGE value="add ToDoItem module" />
     <MESSAGE value="add basic styles for ToDoItem" />
     <MESSAGE value="add input" />
@@ -318,7 +329,8 @@
     <MESSAGE value="change arrTodos on arrTodo" />
     <MESSAGE value="crossed text of completed todo" />
     <MESSAGE value="validate new todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="validate new todo" />
+    <MESSAGE value="validate new todo after edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="validate new todo after edit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
