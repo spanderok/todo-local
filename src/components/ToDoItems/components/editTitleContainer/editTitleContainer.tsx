@@ -11,16 +11,12 @@ export const EditTitleContainer = ({todo}: {todo: Todo}):JSX.Element => {
 
     const [todoTitle, setTodoTitle] = useState(todo.title);
     const [isEdit, setIsEdit] = useState(false);
-  console.log(todoTitle);
   
     return (
         isEdit ? (
             <div className="card-content">
-              <Input value={todoTitle} onChange={e => setTodoTitle(e.target.value)} />
-              <Button onClick={() => {
-                  setIsEdit(false);
-                  toDoService.saveEditCard(todo, todoTitle);
-            }} type="primary">
+              <Input value={todoTitle} onChange={e => setTodoTitle(e.target.value)} onPressEnter={() => setIsEdit(toDoService.saveEditCard(todo, todoTitle))} />
+              <Button onClick={() => setIsEdit(toDoService.saveEditCard(todo, todoTitle))} type="primary">
                 save
               </Button>
             </div>

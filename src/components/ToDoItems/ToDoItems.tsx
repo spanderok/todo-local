@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import 'antd/dist/antd.css';
 import { Card, Checkbox, Button } from 'antd';
 import { observer } from 'mobx-react';
@@ -8,7 +8,14 @@ import './style.css';
 import { EditTitleContainer } from './components/editTitleContainer/editTitleContainer';
 
 const Todo = observer(({todo}: {todo: Todo}) => {
+  const service = useMemo(()=> new ToDoService, [])
   const { toDoService } = useService<{ toDoService: ToDoService }>();
+
+  useEffect(()=>{
+    service.load();
+
+    return service.save();
+  },[service])
  
   return (
     <Card className="card">
