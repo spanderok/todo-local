@@ -37,6 +37,11 @@ export class ToDoService{
     };
     @action
     saveEditCard (id, inputValue): void {
+        const theSameTodo = this.arrToDo.find(todo => todo.title === inputValue)
+        if(!!theSameTodo) {
+            window.alert('Такая задача уже существует')
+            return
+        }
         const todo = this.arrToDo.find(todo => todo.id === id)
         if(!todo)return;
         todo.editMode = !todo.editMode;
