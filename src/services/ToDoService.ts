@@ -8,31 +8,31 @@ export class ToDoService{
     }
 
     @observable
-    arrToDos: Todo[] = [];
+    arrToDo: Todo[] = [];
     
     @action
     addNewToDo ({title}: Pick<Todo, "title">): void {
-        this.arrToDos = [...this.arrToDos,{title, isDone: false, id: new Date().valueOf(), editMode: false}];
+        this.arrToDo = [...this.arrToDo,{title, isDone: false, id: new Date().valueOf(), editMode: false}];
     };
     @action
     completeTodo (id): void {
-        const todo = this.arrToDos.find(todo => todo.id === id)
+        const todo = this.arrToDo.find(todo => todo.id === id)
         if(!todo)return;
         todo.isDone = !todo.isDone
     };
     @action
     deleteTodo (id): void {
-        this.arrToDos = this.arrToDos.filter( todo => todo.id !== id);
+        this.arrToDo = this.arrToDo.filter( todo => todo.id !== id);
     };
     @action
     toggleEditMode (id): void {
-        const todo = this.arrToDos.find(todo => todo.id === id)
+        const todo = this.arrToDo.find(todo => todo.id === id)
         if(!todo)return;
         todo.editMode = !todo.editMode;
     };
     @action
     saveEditCard (id, inputValue): void {
-        const todo = this.arrToDos.find(todo => todo.id === id)
+        const todo = this.arrToDo.find(todo => todo.id === id)
         if(!todo)return;
         todo.editMode = !todo.editMode;
         todo.title = inputValue;

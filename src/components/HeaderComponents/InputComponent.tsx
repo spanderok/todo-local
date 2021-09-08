@@ -32,3 +32,17 @@ export const InputComponent = () => {
         </div>
     );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+type Person = { name: string, age: number}
+type Person2 = Partial<Person>

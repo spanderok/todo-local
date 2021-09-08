@@ -36,7 +36,7 @@ const Todo = (todo: Todo) => {
 
 export const ToDoItems = observer(() => {
     const {toDoService} = useService<{ toDoService: ToDoService }>();
-    const todos = toDoService.arrToDos;
+    const todos = toDoService.arrToDo;
     console.log(todos);
     return (
         <div>
