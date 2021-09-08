@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="change arrTodos on arrTodo">
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="crossed text of completed todo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ToDoService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="edit-card" />
+        <entry key="$PROJECT_DIR$" value="crossed_completed_todo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +70,7 @@
       <workItem from="1630910122971" duration="4935000" />
       <workItem from="1630927534380" duration="17448000" />
       <workItem from="1631002611355" duration="1275000" />
-      <workItem from="1631027568907" duration="7084000" />
+      <workItem from="1631027568907" duration="8563000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -259,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631083728114</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="crossed text of completed todo">
+      <created>1631084138160</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1631084138160</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +310,8 @@
     <MESSAGE value="onChangeInputValue" />
     <MESSAGE value="onSaveChanges" />
     <MESSAGE value="change arrTodos on arrTodo" />
-    <option name="LAST_COMMIT_MESSAGE" value="change arrTodos on arrTodo" />
+    <MESSAGE value="crossed text of completed todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="crossed text of completed todo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

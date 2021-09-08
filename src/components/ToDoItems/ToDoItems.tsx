@@ -41,7 +41,6 @@ const Todo = (todo: Todo) => {
 export const ToDoItems = observer(() => {
     const {toDoService} = useService<{ toDoService: ToDoService }>();
     const todos = toDoService.arrToDo;
-    console.log(todos);
     return (
         <div>
             {todos.map( todo => <Todo {...todo} key={todo.id}/>)}
