@@ -6,7 +6,7 @@ import { useService } from "../../hooks/useServices"
 import { ToDoService } from "../../services/ToDoService";
 
 
-export const InputComponent = () => {
+export const InputComponent = (): JSX.Element => {
     const [inputValue,setInputValue] = useState('');
     const {toDoService} = useService<{ toDoService: ToDoService }>();
 
@@ -26,7 +26,7 @@ export const InputComponent = () => {
     return (
         <div className="contaner-input-button">
             <div className="input">
-                <Input value={inputValue} onChange={getInputValue} placeholder="Enet new to do text"/>
+                <Input value={inputValue} onChange={getInputValue} onPressEnter={createTodoObj} placeholder="Enet new to do text"/>
             </div>
             <Button onClick={createTodoObj} type="primary">Creat to do</Button>
         </div>

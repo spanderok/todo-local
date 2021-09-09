@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo } from 'react';
 import 'antd/dist/antd.css';
 import { Card, Checkbox, Button } from 'antd';
 import { observer } from 'mobx-react';
@@ -9,6 +9,10 @@ import { EditTitleContainer } from './components/editTitleContainer/editTitleCon
 
 const Todo = observer(({todo}: {todo: Todo}) => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
+
+
+
+ 
  
   return (
     <Card className="card">
@@ -28,6 +32,12 @@ const Todo = observer(({todo}: {todo: Todo}) => {
 export const ToDoItems = observer(() => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
   const todos = toDoService.arrToDo;
+  useEffect(()=>{
+    toDoService.load();
+
+  return () => toDoService.save()
+},[])
+
   return (
     <div>
       {todos.map(todo => (
