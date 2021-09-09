@@ -1,38 +1,31 @@
 import { Store } from './../store/store';
-import { action, observable, makeAutoObservable, reaction } from 'mobx';
+import { makeAutoObservable, reaction } from 'mobx';
 
 export type Todo = { title: string, isDone: boolean, id: number };
 export class ToDoService{
-    store: Store<Array<Todo>> = new Store();
+    store: Store<Todo> = new Store();
 
     constructor() {
         makeAutoObservable(this)
-        reaction( () => this.arrToDo, () => this.save());
+        reaction(() => this.arrToDo, () => this.save());
 
     }
 
-    @observable
     arrToDo: Todo[] = [];
 
-    @action
     load() {
         const todos: Array<Todo> = this.store.get("TODO");
         if(todos === null){
             this.arrToDo = [];
             return
         }
-        console.log(todos);
-        
         this.arrToDo = todos;
     }
 
-    @action
     save() {
-        
         this.store.set("TODO", this.arrToDo);
     }
     
-    @action
     addNewToDo ({title}: Pick<Todo, "title">): void {
         const todo = this.arrToDo.some(todo => todo.title === title)
         if(todo) {
@@ -44,19 +37,17 @@ export class ToDoService{
             return
         }
         this.arrToDo = [...this.arrToDo,{title, isDone: false, id: new Date().valueOf()}];
-        this.save();
 
     }
-    @action
+    
     completeTodo (todo: Todo): void {
         todo.isDone = !todo.isDone
-
     }
-    @action
+    
     deleteTodo (todo: Todo): void {
         this.arrToDo = this.arrToDo.filter( currentTodo => currentTodo !== todo);
     }
-    @action
+
     saveEditCard (todo: Todo, inputValue: string): boolean {
         const hasSameTitle = this.arrToDo.some(todo => todo.title === inputValue);
         if(hasSameTitle) {
@@ -68,6 +59,7 @@ export class ToDoService{
             return true;
         }
         todo.title = inputValue;
+        this.save();
         return false;
     }
-};
+}

@@ -35,10 +35,7 @@ export const ToDoItems = observer(() => {
   useEffect(()=>{
     toDoService.load();
 
-  return () => {
-      toDoService.save()
-      console.log("размонтируем");
-    }
+  return () => toDoService.save()
 },[])
 
   return (

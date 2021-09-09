@@ -6,7 +6,7 @@ import { useService } from "../../hooks/useServices"
 import { ToDoService } from "../../services/ToDoService";
 
 
-export const InputComponent = () => {
+export const InputComponent = (): JSX.Element => {
     const [inputValue,setInputValue] = useState('');
     const {toDoService} = useService<{ toDoService: ToDoService }>();
 
