@@ -8,14 +8,11 @@ import './style.css';
 import { EditTitleContainer } from './components/editTitleContainer/editTitleContainer';
 
 const Todo = observer(({todo}: {todo: Todo}) => {
-  const service = useMemo(()=> new ToDoService, [])
   const { toDoService } = useService<{ toDoService: ToDoService }>();
 
-  useEffect(()=>{
-    service.load();
 
-    return service.save();
-  },[service])
+
+ 
  
   return (
     <Card className="card">
@@ -35,6 +32,15 @@ const Todo = observer(({todo}: {todo: Todo}) => {
 export const ToDoItems = observer(() => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
   const todos = toDoService.arrToDo;
+  useEffect(()=>{
+    toDoService.load();
+
+  return () => {
+      toDoService.save()
+      console.log("размонтируем");
+    }
+},[])
+
   return (
     <div>
       {todos.map(todo => (

@@ -1,5 +1,5 @@
 import { Store } from './../store/store';
-import { action, observable, makeAutoObservable } from 'mobx';
+import { action, observable, makeAutoObservable, reaction } from 'mobx';
 
 export type Todo = { title: string, isDone: boolean, id: number };
 export class ToDoService{
@@ -7,6 +7,8 @@ export class ToDoService{
 
     constructor() {
         makeAutoObservable(this)
+        reaction( () => this.arrToDo, () => this.save());
+
     }
 
     @observable
@@ -15,11 +17,18 @@ export class ToDoService{
     @action
     load() {
         const todos: Array<Todo> = this.store.get("TODO");
+        if(todos === null){
+            this.arrToDo = [];
+            return
+        }
+        console.log(todos);
+        
         this.arrToDo = todos;
     }
 
     @action
     save() {
+        
         this.store.set("TODO", this.arrToDo);
     }
     
@@ -35,6 +44,7 @@ export class ToDoService{
             return
         }
         this.arrToDo = [...this.arrToDo,{title, isDone: false, id: new Date().valueOf()}];
+        this.save();
 
     }
     @action
@@ -60,4 +70,4 @@ export class ToDoService{
         todo.title = inputValue;
         return false;
     }
-}
+};
