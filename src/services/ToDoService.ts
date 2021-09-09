@@ -1,9 +1,12 @@
 import { Store } from './../store/store';
 import { makeAutoObservable, reaction } from 'mobx';
+import { injectable } from 'inversify';
+import { inject } from 'mobx-react';
 
 export type Todo = { title: string, isDone: boolean, id: number };
+@injectable()
 export class ToDoService{
-    store: Store<Todo> = new Store();
+    @inject(Store) store: Store<Todo>;
 
     constructor() {
         makeAutoObservable(this)

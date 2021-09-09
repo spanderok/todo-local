@@ -10,10 +10,6 @@ import { EditTitleContainer } from './components/editTitleContainer/editTitleCon
 const Todo = observer(({todo}: {todo: Todo}) => {
   const { toDoService } = useService<{ toDoService: ToDoService }>();
 
-
-
- 
- 
   return (
     <Card className="card">
       <EditTitleContainer todo={todo}/>

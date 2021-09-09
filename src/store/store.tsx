@@ -1,4 +1,5 @@
- 
+ import { injectable } from 'inversify'
+@injectable()
 export class Store<T> {
     get(key: string): Array<T> {
         return JSON.parse(localStorage.getItem(key));

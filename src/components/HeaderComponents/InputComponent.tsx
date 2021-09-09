@@ -6,17 +6,13 @@ import { useService } from "../../hooks/useServices"
 import { ToDoService } from "../../services/ToDoService";
 
 
-export const InputComponent = (): JSX.Element => {
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export const InputComponent = () => {
     const [inputValue,setInputValue] = useState('');
     const {toDoService} = useService<{ toDoService: ToDoService }>();
 
     const createTodoObj = (): void => {
-        const todo = {
-            title: inputValue,
-            isDone: false,
-            id: new Date().valueOf()
-        };
-        toDoService.addNewToDo(todo);
+        toDoService.addNewToDo({title: inputValue});
         setInputValue('');
     };
     const getInputValue = (e): void =>{
