@@ -6,7 +6,6 @@
     "types": ["reflect-metadata"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "strictPropertyInitialization": false,
     "jsx": "react",
     "outDir": "dist",
     "baseUrl": "./src",
