@@ -1,12 +1,15 @@
 import { Store } from './../store/store';
 import { makeAutoObservable, reaction } from 'mobx';
 import { injectable } from 'inversify';
-import { inject } from 'mobx-react';
+import { inject } from 'inversify'
+import 'reflect-metadata';
+import { container } from '../components/ToDoItems/inversify.config';
 
 export type Todo = { title: string, isDone: boolean, id: number };
 @injectable()
 export class ToDoService{
-    @inject(Store) store: Store<Todo>;
+
+    store: Store<Todo> = container.get(Store)
 
     constructor() {
         makeAutoObservable(this)
