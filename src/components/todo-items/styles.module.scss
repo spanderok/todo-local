@@ -1,0 +1,41 @@
+.cardsSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* stylelint-disable */
+:global {
+  .ant-card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 5px;
+  }
+}
+
+.controlPanel {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 0 4px 0 4px;
+  width: 100%;
+}
+
+.controlPanel {
+  :global {
+    .ant-btn{
+      background-color: indianred;
+    }
+  }
+}

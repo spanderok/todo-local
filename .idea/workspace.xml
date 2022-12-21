@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="validate new todo after edit">
+    <list default="true" id="6d49fe65-74f8-423f-9b09-69462d4d9e71" name="Default Changelist" comment="refactor: rebuild puck">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lintstagedrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.stylelintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commitlint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/declarations.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/client-nc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/release.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/input-component/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo-items/components/edit-title-container/components/title-todo/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo-items/components/edit-title-container/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo-items/components/edit-title-container/styles.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo-items/styles.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-services.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2021_14_33_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_09_2021_14_33__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useServices.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useServices.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ToDoService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ToDoService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderComponents/InputComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderComponents/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input-component/styles.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/ToDoItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo-items/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/components/editTitleContainer/components/titleTodo/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/components/editTitleContainer/components/titleTodo/titleTodo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/components/editTitleContainer/editTitleContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/components/editTitleContainer/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDoItems/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/todoTexts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/todo-texts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useServices.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inversify.config.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/inversify.config.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ToDoService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +71,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1xcj5uuGvCOolhTu2QljJcTo6bp" />
   <component name="ProjectViewState">
@@ -33,17 +83,43 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="D:\intership\forTest\internship-project\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/Dmitry/WebstormProjects/todo-local/todo-local",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "/Users/Dmitry/WebstormProjects/todo-local/todo-local/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/Dmitry/WebstormProjects/todo-local/todo-local/node_modules/prettier",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
+    "ts.external.directory.path": "/Users/Dmitry/WebstormProjects/todo-local/todo-local/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.style:format">
+    <configuration name="lint:format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -55,8 +131,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="style:format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="style:format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.style:format" />
+        <item itemvalue="npm.lint:format" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -75,6 +163,7 @@
       <workItem from="1630927534380" duration="17448000" />
       <workItem from="1631002611355" duration="1275000" />
       <workItem from="1631027568907" duration="16742000" />
+      <workItem from="1671623298169" duration="12096000" />
     </task>
     <task id="LOCAL-00001" summary="add toDoCard, checkboxes, button creat">
       <created>1630666234040</created>
@@ -302,10 +391,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add ToDoItem module" />
     <MESSAGE value="add basic styles for ToDoItem" />
     <MESSAGE value="add input" />
     <MESSAGE value="add input and change design" />
@@ -330,7 +417,8 @@
     <MESSAGE value="crossed text of completed todo" />
     <MESSAGE value="validate new todo" />
     <MESSAGE value="validate new todo after edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="validate new todo after edit" />
+    <MESSAGE value="refactor: rebuild puck" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: rebuild puck" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

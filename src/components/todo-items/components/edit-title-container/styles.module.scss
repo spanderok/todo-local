@@ -1,0 +1,19 @@
+.cardContent {
+  display: flex;
+
+  /* stylelint-disable */
+  :global {
+    .ant-btn{
+      background-color: green;
+      height: 24px;
+      padding: 0;
+      width: 28px;
+    }
+  }
+  /* stylelint-enable */
+
+  p {
+    width: 90%;
+    word-wrap: break-word;
+  }
+}

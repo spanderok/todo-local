@@ -1,11 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { App } from './App';
-import { ToDoService } from "./services/ToDoService"
-import './style.css';
-import { ServiceProvider } from './hooks/useServices';
+import App from './app';
+import { ServiceProvider } from './hooks/use-services';
 import './inversify.config';
+import { ToDoService } from './services/todo';
 
-ReactDOM.render(<ServiceProvider toDoService={ new ToDoService()}>
+ReactDOM.render(
+  <ServiceProvider toDoService={new ToDoService()}>
     <App />
-</ServiceProvider>, document.getElementById('root'));
+  </ServiceProvider>,
+  document.getElementById('root'),
+);
