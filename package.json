@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Boilerplate for MobX + React project with Typescript, ES6 compilation and hot code reloading",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint:check": "eslint --ext \".ts,.tsx\" \"src/**/*.{ts,tsx,*.ts,*tsx}\"",
+    "lint:format": "eslint --fix --ext \".ts,.tsx\" \"src/**/*.{ts,tsx,*.ts,*tsx}\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mobxjs/mobx-react-typescript-boilerplate.git"
+    "url": "https://github.com/spanderok/todo-local"
   },
   "keywords": [
     "react",
@@ -16,12 +18,6 @@
     "mobx",
     "starter-kit"
   ],
-  "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mobxjs/mobx/issues"
-  },
-  "homepage": "http://mobxjs.github.com/mobx",
   "devDependencies": {
     "@types/react-dom": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^4.31.0",

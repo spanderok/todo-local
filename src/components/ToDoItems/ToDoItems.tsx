@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect } from 'react';
 import 'antd/dist/antd.css';
 import { Card, Checkbox, Button } from 'antd';
 import { observer } from 'mobx-react';
@@ -14,7 +14,7 @@ const Todo = observer(({todo}: {todo: Todo}) => {
     <Card className="card">
       <EditTitleContainer todo={todo}/>
       <div className="control-panel">
-        <Checkbox onClick={() => toDoService.completeTodo(todo)} checked={todo.isDone}>
+        <Checkbox onClick={() => toDoService.toggleCompleteTodo(todo)} checked={todo.isDone}>
           done
         </Checkbox>
         <Button onClick={() => toDoService.deleteTodo(todo)} type="primary">
